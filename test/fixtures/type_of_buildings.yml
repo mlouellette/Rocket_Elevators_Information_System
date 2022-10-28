@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  residential: false
+  commercial: false
+  corporate: false
+  hybrid: false
+
+two:
+  residential: false
+  commercial: false
+  corporate: false
+  hybrid: false

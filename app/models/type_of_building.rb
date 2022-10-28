@@ -1,0 +1,2 @@
+class TypeOfBuilding < ApplicationRecord
+end

@@ -12,3 +12,16 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 # application.js, application.css, and all non-JS/CSS in the app/assets
 # folder are already added.
 # Rails.application.config.assets.precompile += %w( admin.js admin.css )
+Rails.application.config.assets.precompile += %w( bootstrap.css )
+
+Rails.application.config.assets.precompile += %w( bootstrap.js )
+
+Rails.application.config.assets.precompile += %w( jquery.themepunch.revolution.min.js )
+
+Rails.application.config.assets.precompile += %w( jquery.themepunch.tools.min.js )
+
+Rails.application.config.assets.precompile += %w( form.estimate.nbrelevator.js )
+
+Rails.application.config.assets.precompile +=%w( form.estimate.rates.js )
+
+Rails.application.config.assets.precompile +=%w( form.hide.show.js )

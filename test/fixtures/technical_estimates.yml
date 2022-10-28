@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nbrElevatorRecommended: 1
+  nbrUnitPrice: 1
+  nbrPriceOfElevator: 1
+  nbrCostOfInstallation: 1
+  nbrTotal: 1
+
+two:
+  nbrElevatorRecommended: 1
+  nbrUnitPrice: 1
+  nbrPriceOfElevator: 1
+  nbrCostOfInstallation: 1
+  nbrTotal: 1

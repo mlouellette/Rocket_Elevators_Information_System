@@ -22,6 +22,61 @@ ActiveRecord::Schema.define(version: 2022_10_27_192005) do
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+ActiveRecord::Schema.define(version: 2022_10_26_155117) do
+
+  create_table "articles", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb3", force: :cascade do |t|
+    t.string "title"
+    t.text "body"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "employees", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb3", force: :cascade do |t|
+    t.string "lastName"
+    t.string "firstName"
+    t.string "title"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "quotes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb3", force: :cascade do |t|
+    t.integer "nbrAppBuild"
+    t.integer "NbrFloors"
+    t.integer "nbrBasementFloors"
+    t.integer "nbrDisBui"
+    t.integer "nbrParking"
+    t.integer "nbrElevatorCages"
+    t.integer "nbrOccPerFloor"
+    t.integer "nbrActPerDay"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "technical_estimates", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb3", force: :cascade do |t|
+    t.integer "nbrElevatorRecommended"
+    t.integer "nbrUnitPrice"
+    t.integer "nbrPriceOfElevator"
+    t.integer "nbrCostOfInstallation"
+    t.integer "nbrTotal"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "type_of_buildings", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb3", force: :cascade do |t|
+    t.boolean "residential"
+    t.boolean "commercial"
+    t.boolean "corporate"
+    t.boolean "hybrid"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "type_of_services", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb3", force: :cascade do |t|
+    t.boolean "standard"
+    t.boolean "premium"
+    t.boolean "excelium"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
