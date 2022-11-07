@@ -83,6 +83,6 @@ gem 'jquery-rails'
 
 gem 'pg'
 
-# gem 'faker'
+gem 'figaro'
 
-
+gem 'sendgrid-ruby'

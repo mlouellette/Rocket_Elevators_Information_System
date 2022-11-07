@@ -26,16 +26,18 @@ battery_type = ["Residential", "Commercial", "Corporate", "Hybrid"]
 ####### ------- Create leads ------- ##########
 
 leads = Lead.create(
-    full_name_contact: Faker::Name.name,
-    company_name: Faker::Company.name,
-    email:  Faker::Internet.email,
-    phone: Faker::PhoneNumber.cell_phone,
-    project_name: Faker::Company.catch_phrase,
-    project_description: Faker::Lorem.sentence,
-    departement_in_charge: Faker::Lorem.sentence,
+    contactName: Faker::Name.name,
+    contactBuisnessName: Faker::Company.name,
+    contactEmail:  Faker::Internet.email,
+    contactPhone: Faker::PhoneNumber.cell_phone,
+    projectName: Faker::Company.catch_phrase,
+    contactProject: Faker::PhoneNumber.cell_phone,
+    projectDescription: Faker::Lorem.sentence,
+    contactDepartement: Faker::Lorem.sentence,
     message: Faker::Lorem.sentence,
-    attached_file: 1,
-    date_contact_request: Faker::Date.in_date_period
+    contactAttachment: 1,
+    contactDate: Faker::Date.in_date_period
+
 )
 
 ####### ------- Create Addresses ------- ##########
